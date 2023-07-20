@@ -13,11 +13,17 @@ body{
     background-size: cover;
     background-position: center;
 }
-
+/* WEB LOGO */
+#weblogo{
+    font-size: 40px;
+    font-weight: bold;
+    color: aliceblue;
+}
 
 
 li{
     list-style: none;
+
 }
 
 a{
@@ -26,8 +32,19 @@ a{
     font-size: 1rem;
 }
 
-a:hover{
-    color: orange;
+
+li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+li a:hover{
+    color:aliceblue;
+    background-color: orange;
+    padding: 9px 12px 9px 12px ;
+    
 }
 /* HEADER DESIGN */
 header{
@@ -47,6 +64,7 @@ header{
 .navbar .logo a{
     font-size: 1.5rem;
     font-weight: bold;
+    border-radius: none;
 }
 .navbar .links{
     display: flex;
