@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE NAVBAR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+         <div class="navbar">
+            <div class="logo"> 
+                <a href="Web Creative Dev">Web Creative Dev</a></div>
+                <li><a href="about" class="">About</a></li>
+        <ul class="links">
+            <li><a href="Home">Home</a></li>
+            <li><a href="service">Services</a></li>
+        </ul>
+            <li><a href="contact">Contact</a></li>
+        <a href="#" class="action_btn">Get Started</a>
+        <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+         </div>
+         <div class="dropdown_menu">
+            <li><a href="Hero">Home</a></li>
+            <li><a href="about" class="">About</a></li>
+            <li><a href="service">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="#" class="action_btn">Get Started</a></li>
+         </div>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Welcome</h1>
+            <p>The mountain found the polar ice area of the world </p>
+        </section>
+    </main>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropdown_menu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function( ){
+            dropdown_menu.classList.toggle('open')
+            const isOpen = dropdown_menu.classList.contains('open')
+
+            toggleBtnIcon.classList =classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    
+</body>
+</html>
